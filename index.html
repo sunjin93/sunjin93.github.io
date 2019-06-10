@@ -154,6 +154,27 @@
 		margin:auto;
 		//border:solid 1px red;
 	}
+	.dropdown{
+		display: inline-block;
+	}
+	.dropdownContents{
+		display: none;
+		background-color: #b6b5e7;
+		position: absolute;
+		width: 80px;
+		padding: 40px;
+	}
+	.dropdown:hover .dropdownContents{
+		display: block;
+	}
+	.navtitle{
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+	.dc{
+		font-size: 15px;
+	}
+	
 
 	</style>
 	<title> ♥LOVELY CATS♥</title>
@@ -162,7 +183,7 @@
 	<div id="page">
 <div id="topbanner">
 	<section id="topbanners">
-	| 1:1문의 | 마이페이지 | 로그인 | 회원가입 | 주문배송조회 | 
+	| 1:1문의 | 마이페이지 | <a href="./login.html">로그인</a> | 회원가입 | 주문배송조회 | 
 	</section>
 </div>
 <header>
@@ -170,13 +191,11 @@
 		<section class="clear" style=" border: none;">
 		<img src="./work/img/title.png" >
 		</section>
-		&nbsp;&nbsp;&nbsp;&nbsp;
 		<section style=" border: none;">
 			<form name="searchForm" action="https://www.naver.com/" method="get" target="_blank">
    			<input type="text" name="search_query" placeholder="검색어 입력"/>
       		<button type="submit">검색</button></p>
 			</form>
-		
 		<br>
 		<section class="clear" style="border: none">
 			| 이용안내 | 찾아오시는 길 | 
@@ -185,13 +204,57 @@
 </header>
 <div class="clear"></div><!--float 속성헤제 -->	
 <nav>
+	<div class="dropdown">
 	<ul>
-		<li>고양이 분양</li>
-		<li>고양이에 대하여</li>
-		<li>고양이 품종</li>
-		<li>사료 구매</li>
-		<li>기타 구매</li>
+		 <span class="navtitle">고양이 분양</span>
+			<div class="dropdownContents" class="dc">
+				<li>뱅갈</li>
+				<li>페르시안</li>
+				<li>러시안블루</li>
+				<li>터키시 앙고라</li>
+				<li>스핑크스</li>
+				<li>노르웨이 숲</li>
+				<li>브리티시 쇼트헤어</li>
+			</div>
 	</ul>
+	</div>
+
+	<div class="dropdown">
+	<ul>
+		<span class="navtitle">고양이에 대하여</span>
+			<div class="dropdownContents" class="dc">
+				<li><a href="aboutcat.html">고양이의 정의</a></li>
+				<li><a href="aboutcat.html">생물학적 특징</a></li>
+				<li><a href="aboutcat.html">습성</a></li>
+				<li><a href="aboutcat.html">고양이의 생활</a></li>
+				<li><a href="aboutcat.html">계통 분류</a></li>
+				<li><a href="aboutcat.html">고양이의 품종</a></li>
+				<li><a href="aboutcat.html">한국의 길고양이</a></li>
+				<li><a href="aboutcat.html">고양이 기르기</a></li>
+			</div>
+	</ul>
+	</div>
+
+
+	<div class="dropdown">
+	<ul>
+		<span class="navtitle">고양이 품종 </span>
+			<div class="dropdownContents" class="dc">
+				<li><a href="species.html">뱅갈</a></li>
+				<li><a href="species.html">페르시안</a></li>
+				<li><a href="species.html">러시안블루</a></li>
+				<li><a href="species.html">터키시 앙고라</a></li>
+				<li><a href="species.html">스핑크스</a></li>
+				<li><a href="species.html">노르웨이 숲</a></li>
+				<li><a href="species.html">브리티시 쇼트헤어</a></li>
+			</div>
+	</ul>
+	</div>
+		
+		<span class="navtitle">사료 구매</span>
+		<span class="navtitle">기타 구매</span>
+	
+
 </nav>
 <div class="clear"></div><!--float 속성헤제 -->
 <section>	
@@ -199,13 +262,13 @@
 </section>
 <aside>
 	<ul>
-		<li>뱅갈</li>
-		<li>페르시안</li>
-		<li>러시안블루</li>
-		<li>터키시 양고라</li>
-		<li>스핑크스</li>
-		<li>노르웨이 숲</li>
-		<li>브리티시 쇼트헤어</li>
+		<li><a href="species.html">뱅갈</a></li>
+		<li><a href="species.html">페르시안</a></li>
+		<li><a href="species.html">러시안블루</a></li>
+		<li><a href="species.html">터키시 앙고라</a></li>
+		<li><a href="species.html">스핑크스</a></li>
+		<li><a href="species.html">노르웨이 숲</a></li>
+		<li><a href="species.html">브리티시 쇼트헤어</a></li>
 	</ul>
 </aside>
 <section id="tb">
@@ -216,7 +279,6 @@
 	<tr>
 	<th id="thf"> <img src="./work/img/p1.PNG" width="50px">3만원이상 구매하신<p>신규회원 고객분들께</p><p>사은품증정!</p></th>
 	</tr>
-
 </table>
 <table class="tb">
 	<tr>
@@ -262,7 +324,7 @@
 			<li>•입금자 이*수님 28,500원 </li>
 			<li>•입금자 김*태님 44,800원 </li>
 		</ul>
- </th>
+ 	</th>
 	</tr>
 </table>
 </section>

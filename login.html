@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>로그인</title>
+	<style>
+	.lang{
+		margin-left: 450px;
+	}
+	body{
+		background-color: #e3e3e3;
+	}
+
+	#page{
+		width: 400px;
+		margin:auto;
+		//border:solid 1px red;
+	}
+
+	#maintitle{
+		margin-left: 50px;
+	}
+	table{
+		border-collapse: collapse;
+	}
+	table,th,td{
+		border:solid 0px #123456;
+	}
+	#btn{
+		width: 400px;
+		height:50px;
+		border-radius: 3px;
+		margin:10px;
+		background-color:#d62ce1;
+	}	
+	input[type="text"]{
+		background:white;
+		color: gray;
+		width: 400px;
+		height: 40px;
+		font-size:15px;
+	}
+
+	input[type="password"]{
+		background:white;
+		color: gray;
+		width: 400px;
+		height: 40px;
+		font-size:15px;
+	}
+	input:focus{
+		border-color: #d62ce1;
+	}
+	#sp1{
+		font-size: 20px;
+		color : white;
+	}
+	#loginlock{
+		margin-top: 50px;
+	}
+	#t1{
+		font-size: 10px;
+	
+	}
+	#t2{
+		font-size: 13px;
+	}
+	#bottom{
+		font-size: 10px;
+		margin-top: 80px;
+		text-align: center;
+	}
+	#bottomline{
+		font-size: 10px;
+		margin-top: 7px;
+		padding-left: 30px;
+	}
+	
+	</style>
+</head>
+<body>
+	<div id="page">
+		<div class="lang">
+			<select id="locale_switch" name="locale_switch" title="언어선택">
+				<option value="ko_KR" >한국어</option>
+				<option value="en_US" >English</option>
+				<option value="zh-Hans_CN" >中文(简体)</option>
+				<option value="zh-Hant_TW" >中文(台灣)</option>
+			</select>
+		</div>
+
+		<div id= "maintitle">
+		<img src="./work/img/title2.png">
+		</div>
+		<table border="0">
+			<tr>
+				<th><input type="text" name-"text"  placeholder="아이디"></th>
+			</tr>
+			<tr>
+				<th><input type="password" name-"password" placeholder="비밀번호"></th>
+			</tr>
+			<tr>
+				<th><button type=button id="btn"><span id=sp1>로그인</span></button></th>
+			</tr>
+			<tr>
+				<th id="t1"><input type="checkbox" name="autologin" value="자동로그인">자동로그인</th>
+		
+			</tr>
+			<tr>
+				<th id="t2">아이디 찾기 | 비밀번호 찾기 | 회원가입</th>
+			</tr>
+		</table>
+	
+
+	<div id="loginlock">
+		<img src="./work/img/login.jpg" width="420px">
+	</div>
+	<div id="bottom">
+	이용약관 | 개인정보처리방침 | 책임의 한계와 법적고지 | 회원정보 | 고객센터
+ 	</div>
+ 	<div id="bottomline">
+ 		<table>
+ 			<tr>
+ 				<th> <img src="./work/img/title2.png" width="90px"> </th>
+ 				<td> Copyright &copy; <span style="font-weight: bold"> LOVELY CATS Corp.</span> All Rights Reserved.</td>
+ 			</tr>
+ 			
+ 		</table>
+ 	</div>
+</div>
+</body>
+</html>
